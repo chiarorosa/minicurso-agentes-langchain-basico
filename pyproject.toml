@@ -19,6 +19,9 @@ duckduckgo-search = "^6.3.0"
 wikipedia = "^1.4.0"
 
 
+[tool.poetry.group.dev.dependencies]
+pytest = "^8.3.3"
+
 [build-system]
 requires = ["poetry-core"]
 build-backend = "poetry.core.masonry.api"
