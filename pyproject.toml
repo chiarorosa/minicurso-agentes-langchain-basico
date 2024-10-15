@@ -25,3 +25,4 @@ build-backend = "poetry.core.masonry.api"
 
 [tool.poetry.scripts]
 validar = 'minicurso_agentes_langchain_basico.valida_invoca:main'
+chat    = 'minicurso_agentes_langchain_basico.chat:main'
