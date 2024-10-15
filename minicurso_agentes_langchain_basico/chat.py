@@ -4,6 +4,16 @@ from .agente import Agente
 
 
 def main():
+    """
+    Executa o fluxo principal do assistente de programação.
+
+    Este método inicializa um agente, coleta uma pergunta do usuário,
+    configura as mensagens para o modelo de IA e invoca o modelo
+    para obter uma resposta.
+
+    Retorna:
+        str: O conteúdo da resposta gerada pelo modelo de IA.
+    """
     agente = Agente()
 
     pergunta = input("Olá aluno, tire sua dúvida comigo...")

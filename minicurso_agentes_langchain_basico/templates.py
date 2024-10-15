@@ -5,6 +5,17 @@ from .agente import Agente
 
 
 def main():
+    """
+    Executa o fluxo principal do assistente de programação com templates de chat.
+
+    Este método inicializa um agente, configura os templates de chat,
+    coleta as entradas do usuário para a pergunta e nível de programação,
+    formata as mensagens, invoca o modelo para obter uma resposta
+    e retorna o conteúdo da resposta.
+
+    Retorna:
+        str: O conteúdo da resposta gerada pelo modelo de IA.
+    """
     agente = Agente()
 
     chat_templates = ChatPromptTemplate.from_messages(
