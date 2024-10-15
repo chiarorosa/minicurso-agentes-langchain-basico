@@ -1,6 +1,6 @@
 [tool.poetry]
 name = "minicurso-agentes-langchain-basico"
-version = "0.1.0"
+version = "0.1.0-dev"
 description = ""
 authors = ["chiarorosa <pablo.chiaro.rosa@gmail.com>"]
 license = "MIT"
@@ -24,4 +24,3 @@ requires = ["poetry-core"]
 build-backend = "poetry.core.masonry.api"
 
 [tool.poetry.scripts]
-validar = 'minicurso_agentes_langchain_basico.valida_invoca:main'
