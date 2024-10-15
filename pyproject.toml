@@ -1,0 +1,27 @@
+[tool.poetry]
+name = "minicurso-agentes-langchain-basico"
+version = "0.1.0"
+description = ""
+authors = ["chiarorosa <pablo.chiaro.rosa@gmail.com>"]
+license = "MIT"
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.10"
+python-decouple = "^3.8"
+langchain = "^0.3.3"
+langchain-google-genai = "^2.0.1"
+langchain-community = "^0.3.2"
+langchain-experimental = "^0.3.2"
+beautifulsoup4 = "^4.12.3"
+lxml = "^5.3.0"
+duckduckgo-search = "^6.3.0"
+wikipedia = "^1.4.0"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
+
+[tool.poetry.scripts]
+validar = 'minicurso_agentes_langchain_basico.valida_invoca:main'
