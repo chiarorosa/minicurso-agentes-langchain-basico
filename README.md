@@ -45,11 +45,13 @@ Capacitar desenvolvedores, entusiastas de inteligência artificial e estudantes 
 
 3. **Crie o arquivo `.env`:**
 
-   - Crie um arquivo chamado `.env` na raiz do projeto.
+   - Renomeie o arquivo chamado `.env-modelo` na raiz do projeto para `.env`.
    - Adicione sua chave de API obtida diretamente no Google através do link: [Obter API Key](https://aistudio.google.com/app/apikey).
+   - Adicione sua chave de API Google Serper: [Obter API Key](https://serper.dev/api-key).
    - O conteúdo do `.env` deve ser:
      ```env
      API_KEY=Sua_Chave_API_Aqui
+     SERPER_API_KEY=_Sua_Chave_API_Aqui
      ```
 
 4. **Instale o Poetry:**
