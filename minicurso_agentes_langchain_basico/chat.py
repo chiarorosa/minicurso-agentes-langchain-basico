@@ -16,7 +16,7 @@ def main():
     """
     agente = agentes.Agente()
 
-    pergunta = input("Olá aluno, tire sua dúvida comigo...")
+    pergunta = input("Olá aluno, tire sua dúvida comigo: ")
 
     mensagens = [
         SystemMessage(
