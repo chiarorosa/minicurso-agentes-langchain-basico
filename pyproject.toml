@@ -27,7 +27,7 @@ requires = ["poetry-core"]
 build-backend = "poetry.core.masonry.api"
 
 [tool.poetry.scripts]
-validar   = 'minicurso_agentes_langchain_basico.valida_inv  oca:main'
+validar   = 'minicurso_agentes_langchain_basico.valida_invoca:main'
 chat      = 'minicurso_agentes_langchain_basico.chat:main '
 templates = 'minicurso_agentes_langchain_basico.templates:main'
 pacote = 'minicurso_agentes_langchain_basico.testa_pacote:main'
