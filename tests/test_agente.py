@@ -4,7 +4,7 @@ from unittest.mock import MagicMock, patch
 import pytest
 
 # Importa a classe Agente do módulo agente dentro do pacote minicurso_agentes_langchain_basico
-from minicurso_agentes_langchain_basico.agente import Agente
+from minicurso_agentes_langchain_basico.pacote_agentes.agente import Agente
 
 
 def test_agente_init_success():

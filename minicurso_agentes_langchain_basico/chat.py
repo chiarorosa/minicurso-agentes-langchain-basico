@@ -1,7 +1,6 @@
 from langchain_core.messages import AIMessage, HumanMessage, SystemMessage
 
-# Import com caminho relativo
-from .agente import Agente
+from . import pacote_agentes as agentes
 
 
 def main():
@@ -15,7 +14,7 @@ def main():
     Retorna:
         str: O conteúdo da resposta gerada pelo modelo de IA.
     """
-    agente = Agente()
+    agente = agentes.Agente()
 
     pergunta = input("Olá aluno, tire sua dúvida comigo...")
 
