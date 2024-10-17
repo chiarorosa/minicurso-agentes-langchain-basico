@@ -19,10 +19,7 @@ duckduckgo = DuckDuckGoSearchResults(api_wrapper=duckduckgo_wrapper)
 wikipedia = WikipediaQueryRun(api_wrapper=WikipediaAPIWrapper(lang="pt", top_k_results=5))
 
 # Instanciando a classe GoogleSerperAPIWrapper
-google_serper = GoogleSerperAPIWrapper(
-    gl="br",
-    hl="pt-br",
-)
+google_serper = GoogleSerperAPIWrapper(location="Brazil", gl="br", hl="pt-br", search_type="search", k=2)
 
 
 def pesquisa() -> str:
@@ -39,3 +36,13 @@ def main() -> str:
     # Busca com Wikipedia
     resultado = wikipedia.invoke(pergunta)
     print(f"\nResultado Wikipedia:\n {resultado}")
+
+    # Busca com Google Serper
+    resultado = google_serper.results(pergunta)
+    print(f"\nResultado Google Serper:\n {resultado['organic']}")
+
+    for item in resultado["organic"]:
+        print(f"\n{item['title']}")
+        print(f"{item['snippet']}")
+        print(f"{item['link']}")
+        print("\n")
