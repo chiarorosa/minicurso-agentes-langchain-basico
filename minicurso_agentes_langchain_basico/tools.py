@@ -16,7 +16,7 @@ duckduckgo_wrapper = DuckDuckGoSearchAPIWrapper(region="br-pt", time="y")
 duckduckgo = DuckDuckGoSearchResults(api_wrapper=duckduckgo_wrapper)
 
 # Instanciando a classe WikipediaQueryRun
-wikipedia = WikipediaQueryRun(api_wrapper=WikipediaAPIWrapper(lang="pt"))
+wikipedia = WikipediaQueryRun(api_wrapper=WikipediaAPIWrapper(lang="pt", top_k_results=5))
 
 # Instanciando a classe GoogleSerperAPIWrapper
 google_serper = GoogleSerperAPIWrapper(
@@ -31,6 +31,11 @@ def pesquisa() -> str:
 
 
 def main() -> str:
+    pergunta = pesquisa()
     # Busca com DuckDuckGo
-    resultado = duckduckgo.invoke(pesquisa())
-    print(f"Resultado DuckDuckGo: {resultado}")
+    resultado = duckduckgo.invoke(pergunta)
+    print(f"\nResultado DuckDuckGo:\n {resultado}")
+
+    # Busca com Wikipedia
+    resultado = wikipedia.invoke(pergunta)
+    print(f"\nResultado Wikipedia:\n {resultado}")
