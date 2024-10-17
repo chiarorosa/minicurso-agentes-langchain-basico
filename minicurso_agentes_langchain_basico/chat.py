@@ -1,5 +1,6 @@
 from langchain_core.messages import AIMessage, HumanMessage, SystemMessage
 
+# Import com caminho relativo
 from .agente import Agente
 
 
