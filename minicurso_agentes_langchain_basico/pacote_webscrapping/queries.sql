@@ -1,0 +1,9 @@
+-- SQLite
+-- .tables
+-- .schema livros
+-- SELECT id, titulo, preco FROM livros;
+-- SELECT COUNT(*) AS total_livros FROM livros;
+-- SELECT COUNT(*) AS total_livros FROM livros WHERE titulo LIKE '%Harry%';
+-- SELECT titulo, preco FROM livros WHERE preco > 29.90 AND preco < 49.90;
+-- SELECT id,descricao FROM livros WHERE genero = 'Fiction';
+-- SELECT COUNT(*) FROM livros WHERE genero = 'Fiction';
