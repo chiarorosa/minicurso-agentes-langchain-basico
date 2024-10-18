@@ -3,9 +3,11 @@ import os
 from decouple import config
 from langchain_google_genai import ChatGoogleGenerativeAI
 
+# toolkit aqui
+
 
 class Agente:
-    def __init__(self, modelo: str = "gemini-1.5-flash"):
+    def __init__(self, modelo: str = "gemini-1.5-flash-latest"):
         self._configurar_chave_api()
         self.modelo = self._instanciar(modelo)
 

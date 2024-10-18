@@ -1,0 +1,6 @@
+-- SQLite
+--select * from movimentacoes ORDER by quantidade DESC LIMIT 5;
+--select * from livros where id = 1;
+--SELECT genero, COUNT(*) FROM livros GROUP BY genero ORDER BY COUNT(*) DESC LIMIT 1;
+--SELECT T1.titulo FROM livros AS T1 INNER JOIN movimentacoes AS T2 ON T1.id = T2.livro_id GROUP BY T1.titulo ORDER BY SUM(T2.quantidade) DESC LIMIT 1;
+--SELECT titulo,avaliacao,preco FROM livros ORDER BY avaliacao DESC, preco DESC LIMIT 1;
