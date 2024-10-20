@@ -1,6 +1,6 @@
 ### Minicurso - Agentes com LangChain Básico
 
-Bem-vindo ao repositório **minicurso-agentes-langchain-basico**! Este projeto foi desenvolvido para oferecer uma introdução prática e acessível ao desenvolvimento de agentes inteligentes utilizando a framework [LangChain](https://langchain.com/) em conjunto com a [Google Generative AI](https://ai.google/).
+Bem-vindo ao repositório **minicurso-agentes-langchain-basico**! Este projeto foi desenvolvido para oferecer uma introdução prática e acessível ao desenvolvimento de agentes inteligentes utilizando a framework [LangChain](https://langchain.com/) em conjunto com a [Google Generative AI](https://langchain.com/).
 
 #### 📚 O que você encontrará aqui:
 
@@ -12,12 +12,21 @@ Bem-vindo ao repositório **minicurso-agentes-langchain-basico**! Este projeto f
 
 Capacitar desenvolvedores, entusiastas de inteligência artificial e estudantes a construir e implementar agentes baseados em linguagem natural utilizando LangChain em conjunto com as ferramentas da Google Generative AI, promovendo uma compreensão sólida das ferramentas e técnicas envolvidas.
 
+#### 🛠️ Pré-requisitos:
+
+Antes de começar, certifique-se de ter as seguintes ferramentas instaladas em seu ambiente:
+
+- [Git](https://git-scm.com/)
+- [Python 3.11+](https://www.python.org/downloads/)
+- [Pyenv](https://github.com/pyenv/pyenv#installation)
+- [Poetry](https://python-poetry.org/docs/#installation)
+
 #### 🚀 Como Começar:
 
-1. **Clone o repositório:**
+1. **Clone o repositório (HTTPS):**
 
    ```bash
-   git clone https://github.com/seu-usuario/minicurso-agentes-langchain-basico.git
+   git clone https://github.com/chiarorosa/minicurso-agentes-langchain-basico.git
    ```
 
 2. **(Opcional) Configure o pyenv para gerenciar a versão do Python:**
@@ -30,6 +39,7 @@ Capacitar desenvolvedores, entusiastas de inteligência artificial e estudantes 
        Utilize o [pyenv-win](https://github.com/pyenv-win/pyenv-win) seguindo as instruções fornecidas.
 
    - **Instale a versão específica do Python necessária:**
+     Você deve ir até o diretório do projeto, dentro dele executar os próximos dois passos;
 
      ```bash
      pyenv install 3.11
@@ -56,9 +66,20 @@ Capacitar desenvolvedores, entusiastas de inteligência artificial e estudantes 
      EXA_API_KEY=Sua_Chave_API_Aqui
      ```
 
-4. **Instale o Poetry:**
+4. **Configure o Poetry para usar o Python do Pyenv e criar o `.venv` no diretório do projeto:**
 
-   - Certifique-se de ter o [Poetry](https://python-poetry.org/) instalado no seu ambiente. Caso não tenha, você pode instalá-lo seguindo as instruções na [documentação oficial](https://python-poetry.org/docs/#installation).
+   - **Certifique-se de ter o [Poetry](https://python-poetry.org/) instalado no seu ambiente.** Caso não tenha, você pode instalá-lo seguindo as instruções na [documentação oficial](https://python-poetry.org/docs/#installation).
+
+   - **Configure o Poetry para usar o Python gerenciado pelo Pyenv:**
+
+     ```bash
+     poetry env use $(pyenv which python)
+     ```
+
+   - **Configure o Poetry para criar o ambiente virtual localmente no diretório do projeto:**
+     ```bash
+     poetry config virtualenvs.in-project true
+     ```
 
 5. **Instale as dependências do projeto:**
 
